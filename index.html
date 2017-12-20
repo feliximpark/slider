@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fotoslider Wolfsburg</title>
+    <link href="style/foundation.css" rel="stylesheet" type="text/css" />
+    <link href="style/twentytwenty.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet">
+    <link href="style/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div id="header" class="row">
+        <div class="large-2 columns">
+            <img id="logo" src="img/logo-normal-white.png" alt="Logo der Wolfsburger Nachrichten">
+        </div>
+        <div id="header" class="large-10 columns"><h1>So hat sich Wolfsburg verändert</h1></div>
+        <hr class="large-12 columns">
+    </div>
+
+    <div class="row" style="margin-top: 2em;">
+      <div class="large-12 columns">
+        <h2>Die Markthalle</h2>
+        <p>Erst war sie Kaufhaus, dann das Sorgenkind der Stadtplaner. Inzwischen aber ist das ehemalige Herthie-Gebäude das neue digitale Herz der Stadt. Gemeinsam wollen hier Verwaltung, Volkswagen und der VfL Wolfsburg in die digitale Zukunft starten.</p><br>
+      </div>
+      <div class="large-12 columns">
+        <div class="twentytwenty-container">
+          <img src="img/markthalle_alt.jpg" />
+          <img src="img/markthalle_neu.jpg" />
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="row" style="margin-top: 2em;">
+      <div class="large-12 columns">
+        <h2>Die Porschestraße</h2>
+        <p>Kaum zu glauben, aber die Porschestraße war einmal Wolfsburgs wichtigste Verkehrsschlagader. Die Umwandlung in eine Fußgängerzone und Flaniermeile wurde in den 80er Jahren mit viel Protest begleitet. Inzwischen allerdings ist die "Fuzo" nicht mehr wegzudenken.</p><br>
+      </div>
+      <div class="large-12 columns">
+        <div class="twentytwenty-container">
+          <img src="img/porschestrasse1.jpg" />
+          <img src="img/porschestrasse1_neu.jpg" />
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="row" style="margin-top: 2em;">
+      <div class="large-12 columns">
+        <h2>Die Piazza</h2>
+        <p>Wo heute Autos fahren, war früher ein beliebter Treffpunkt: An der Ecke Pestalozzi-Allee und Porschestraße sorgten vor allem die italienischen Gastarbeiter für südeuopäische Atmosphäre. Die Christuskirche im Hintergrund hat den Ort stets geprägt - damals wie heute.</p><br>
+      </div>
+      <div class="large-12 columns">
+        <div class="twentytwenty-container">
+          <img src="img/piazza.jpg" />
+          <img src="img/piazza_neu.jpg" />
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="row" style="margin-top: 2em;">
+      <div class="large-12 columns">
+        <h2>Die Kaufhofpassage</h2>
+        <p>Ein Blick auf die Verbindung zwischen Porschestraße und dem Kaufhof zeigt: Einiges in Wolfsburg ist (fast) so geblieben, wie es schon in den 70ern war. Heute wie damals sind es vor allem kleine Einzelhändler, die die Passage prägen.</p><br>
+      </div>
+      <div class="large-12 columns">
+        <div class="twentytwenty-container">
+          <img src="img/kaufhofpassage.jpg" />
+          <img src="img/kaufhofpassage_neu.jpg" />
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="row" style="margin-top: 2em;">
+      <div class="large-12 columns">
+        <h2>Der Nordkopf</h2>
+        <p>Der nördlichste Teil der Wolfsburger Innenstadt soll in den kommenden Jahren ordentlich aufgemöbelt werden. Schließlich ist er meist erster Anlauf-Punkt für Wolfsburg-Besucher - und damit auch die Visitenkarte der Stadt.</p><br>
+      </div>
+      <div class="large-12 columns">
+        <div class="twentytwenty-container">
+          <img src="img/nordkopf3.jpg" />
+          <img src="img/nordkopf3_neu.jpg" />
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="row" style="margin-top: 2em;">
+      <div class="large-12 columns">
+        <hr>
+        <p>Fotos: regios24/Sammlung Rohde +++ Fotobearbeitung: Christoph Knoop +++ Coding: Christoph Knoop</p><br>
+      </div>
+    </div>
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+    <script src="script/jquery.event.move.js"></script>
+    <script src="script/jquery.twentytwenty.js"></script>
+    <script>
+    $(function(){
+      $(".twentytwenty-container[data-orientation!='vertical']").twentytwenty({default_offset_pct: 0.7});
+      $(".twentytwenty-container[data-orientation='vertical']").twentytwenty({default_offset_pct: 0.3, orientation: 'vertical'});
+    });
+    </script>
+</body>
+</html>
